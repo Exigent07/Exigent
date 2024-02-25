@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gothic+A1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-text-color-light: #FFFFFF;
+  --primary-text-color-dark: #000000;
+  --background-color-light: #FFFFFF;
+  --background-color-dark: #000000;
+  --button-color: #FFA500;
+}
+
+body {
+  background: var(--background-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+body * {
+  color: var(--primary-text-color-light);
+}
+
+.main-content {
+  text-align: left;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color-dark);
+  border-bottom: solid 0.05em var(--background-color-light);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-text-color-light);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  padding: 0 3em;
+}
+
+a:hover {
+  color: #FFA500;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.welcome {
+  position: absolute;
+  z-index: 99;
+  font-family: "Gothic A1", sans-serif;
+  transform: translateY(-800px);
+  left: 3.2%;
+  font-size: 4.2rem;
+}
+
+main {
+  height: 90dvh;
+  width: 90dvw;
+  overflow: hidden;
+}
+
+.intro {
+  z-index: 99;
+  color: #FFA500;
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  transform: translateY(100%);
+  left: 3%;
+  font-size: 1.8em;
+  max-width: 26em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.logo {
+  margin-top: 0.5%;
+  text-align: center;
+  font-family: "Gothic A1", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8em; 
+  transition: all 0.3s ease;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95dvh;
+  width: 95dvw;
+  overflow: hidden;
+  transition: 0.2 all;
+}
+
+.exigent {
+  position: absolute;
+  transform: translateX(0);
+  color: var(--primary-text-color-light);
+  font-family: "Gothic A1", "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  transition: 0.2 all;
+}
+
+.animate {
+  --bg-size: 450%;
+  background: linear-gradient(
+      90deg,
+      var(--primary-text-color-dark),
+      var(--primary-text-color-light),
+      var(--primary-text-color-dark)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  transition: 0.2 all;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate {
+    animation: move-bg 6s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
