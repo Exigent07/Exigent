@@ -65,6 +65,8 @@ a:hover {
 main {
   height: 90dvh;
   width: 90dvw;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -122,6 +124,18 @@ main {
   color: transparent;
   background-clip: text;
   transition: 0.2 all;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {

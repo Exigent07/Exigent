@@ -54,7 +54,7 @@ function typeName() {
                 E.textContent += myName[index];
             }, 50 * index);
         }
-    }, 1000);
+    }, 1200);
 }
 
 function loadElements() {
@@ -68,5 +68,5 @@ setTimeout(() => {
     loadElements();
     setTimeout(() => {
         body.style.overflow = "auto";
-    }, 1500);
-}, 5000);
+    }, 1200);
+}, 3500);
