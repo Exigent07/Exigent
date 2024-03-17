@@ -1,2 +1,2 @@
-# Exigent
-Portfolio Website
+# **Exigent**
+*Portfolio Website*
